@@ -1,117 +1,137 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Diany | Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-gray-100 text-gray-800">
+<body class="bg-gray-100 text-gray-800 antialiased">
 
 <!-- ================= HEADER ================= -->
-<header class="bg-white shadow fixed w-full top-0 z-50">
+<header class="bg-white/90 backdrop-blur shadow-sm fixed w-full top-0 z-50">
   <nav class="max-w-6xl mx-auto flex justify-between items-center p-4">
-    <h1 class="font-bold text-xl">Diany</h1>
-    <ul class="flex gap-4 text-sm">
-      <li><a href="#about" class="hover:text-blue-600">À propos</a></li>
-      <li><a href="#skills" class="hover:text-blue-600">Compétences</a></li>
-      <li><a href="#projects" class="hover:text-blue-600">Projets</a></li>
-      <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+    <h1 class="font-bold text-xl text-blue-600 tracking-wide">Diany</h1>
+    <ul class="flex gap-6 text-sm font-medium">
+      <li><a href="#about" class="hover:text-blue-600 transition">À propos</a></li>
+      <li><a href="#skills" class="hover:text-blue-600 transition">Compétences</a></li>
+      <li><a href="#projects" class="hover:text-blue-600 transition">Projets</a></li>
+      <li><a href="#contact" class="hover:text-blue-600 transition">Contact</a></li>
     </ul>
   </nav>
 </header>
 
 <!-- ================= HERO ================= -->
-<section class="text-center pt-32 pb-20 bg-blue-600 text-white">
-
+<section class="text-center pt-32 pb-24 bg-gradient-to-br from-blue-600 to-indigo-600 text-white">
   <img 
     src="WhatsApp Image 2025-10-07 à 14.45.51_165253f9.jpg"
     alt="Photo de profil"
-    class="w-32 h-32 mx-auto rounded-full border-4 border-white mb-6 object-cover"
+    class="w-32 h-32 mx-auto rounded-full border-4 border-white shadow-lg mb-6 object-cover"
   >
 
-  <h2 class="text-4xl font-bold mb-4">Étudiante en Génie Informatique</h2>
+  <h2 class="text-4xl font-bold mb-3">
+    Étudiante en Génie Informatique
+  </h2>
 
-  <p class="max-w-xl mx-auto">
-    Spécialisée en développement web et cloud.
-    Passionnée par les infrastructures modernes et les technologies web.
+  <p class="max-w-xl mx-auto text-blue-100">
+    Développement web · Cloud computing · Technologies modernes
   </p>
 </section>
 
 <!-- ================= A PROPOS ================= -->
-<section id="about" class="max-w-6xl mx-auto p-6 mt-10">
-  <h2 class="text-2xl font-bold mb-4">À propos de moi</h2>
-  <p>
-    Je suis <strong>Diany</strong>, étudiante en génie informatique.
-    Je m’intéresse au développement web, cloud et aux systèmes informatiques modernes.
-  </p>
-  <p class="mt-2">
-Au cours de ma formation et de mes projets personnels, j’ai acquis des compétences
-en HTML, Tailwind CSS, JavaScript et Git/GitHub, que j’utilise pour concevoir des
-interfaces web simples, modernes et responsives.
-</p>
+<section id="about" class="max-w-6xl mx-auto p-6 mt-12">
+  <div class="bg-white rounded-xl shadow-sm hover:shadow-md transition p-6">
+    <h2 class="text-2xl font-bold mb-4 text-blue-600">À propos de moi</h2>
+    <p>
+      Je suis <strong>Diany</strong>, étudiante en génie informatique, passionnée par le
+      développement web, le cloud computing et les technologies numériques modernes.
+    </p>
+    <p class="mt-3 text-gray-600">
+      À travers ma formation académique et mes projets personnels, j’ai développé des
+      compétences solides en HTML, Tailwind CSS, JavaScript et Git/GitHub afin de créer
+      des interfaces web modernes, responsives et bien structurées.
+    </p>
+  </div>
 </section>
 
 <!-- ================= FORMATION ================= -->
-<section class="bg-white p-6 mt-6">
-  <h2 class="text-2xl font-bold mb-4">Formation</h2>
-  <ul class="list-disc ml-6">
-    <li>Licence 2 – Génie Informatique</li>
-    <li>Spécialisation : Développement Web & Cloud</li>
-  </ul>
+<section class="max-w-6xl mx-auto p-6 mt-6">
+  <div class="bg-white rounded-xl shadow-sm hover:shadow-md transition p-6">
+    <h2 class="text-2xl font-bold mb-4 text-blue-600">Formation</h2>
+    <ul class="list-disc ml-6 text-gray-700">
+      <li>Licence 2 – Génie Informatique</li>
+      <li>Spécialisation : Développement Web & Cloud Computing</li>
+    </ul>
+  </div>
 </section>
 
 <!-- ================= EXPERIENCES ================= -->
-<section class="p-6 mt-6">
-  <h2 class="text-2xl font-bold mb-4">Expériences professionnelles</h2>
-  <p>
-    Stages en entreprises TGI et NEW-TECHSN en tant qu’assistante et technicienne informatique.
-  </p>
+<section class="max-w-6xl mx-auto p-6 mt-6">
+  <div class="bg-white rounded-xl shadow-sm hover:shadow-md transition p-6">
+    <h2 class="text-2xl font-bold mb-4 text-blue-600">Expériences professionnelles</h2>
+    <p class="text-gray-700">
+      Stages en entreprises <strong>TGI</strong> et <strong>NEW-TECHSN</strong> en tant
+      qu’assistante et technicienne informatique, avec des missions de support technique,
+      maintenance et assistance utilisateur.
+    </p>
+  </div>
 </section>
 
 <!-- ================= COMPETENCES ================= -->
-<section id="skills" class="bg-white p-6 mt-6">
-  <h2 class="text-2xl font-bold mb-4">Compétences</h2>
-  <div class="flex flex-wrap gap-3">
-    <span class="bg-blue-200 px-3 py-1 rounded">HTML</span>
-    <span class="bg-blue-200 px-3 py-1 rounded">CSS</span>
-    <span class="bg-blue-200 px-3 py-1 rounded">Tailwind CSS</span>
-    <span class="bg-blue-200 px-3 py-1 rounded">Git & GitHub</span>
-    <span class="bg-blue-200 px-3 py-1 rounded">Cloud Computing</span>
+<section id="skills" class="max-w-6xl mx-auto p-6 mt-6">
+  <div class="bg-white rounded-xl shadow-sm hover:shadow-md transition p-6">
+    <h2 class="text-2xl font-bold mb-4 text-blue-600">Compétences</h2>
+    <div class="flex flex-wrap gap-3">
+      <span class="px-4 py-2 bg-blue-50 text-blue-700 rounded-full text-sm font-medium">HTML</span>
+      <span class="px-4 py-2 bg-blue-50 text-blue-700 rounded-full text-sm font-medium">CSS</span>
+      <span class="px-4 py-2 bg-blue-50 text-blue-700 rounded-full text-sm font-medium">Tailwind CSS</span>
+      <span class="px-4 py-2 bg-blue-50 text-blue-700 rounded-full text-sm font-medium">Git & GitHub</span>
+      <span class="px-4 py-2 bg-blue-50 text-blue-700 rounded-full text-sm font-medium">Cloud Computing</span>
+    </div>
   </div>
 </section>
 
 <!-- ================= PROJETS ================= -->
-<section id="projects" class="p-6 mt-6">
-  <h2 class="text-2xl font-bold mb-4">Projets</h2>
+<section id="projects" class="max-w-6xl mx-auto p-6 mt-6">
+  <div class="bg-white rounded-xl shadow-sm hover:shadow-md transition p-6">
+    <h2 class="text-2xl font-bold mb-6 text-blue-600">Projets</h2>
 
-  <div class="grid md:grid-cols-2 gap-4">
-    <div class="bg-white p-4 shadow rounded">
-      <h3 class="font-bold">Portfolio personnel</h3>
-      <p>Création d’un portfolio responsive avec HTML et Tailwind CSS.</p>
-    </div>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="bg-gray-50 rounded-xl p-5 hover:-translate-y-1 hover:shadow-lg transition">
+        <h3 class="font-semibold text-lg">Portfolio personnel</h3>
+        <p class="text-gray-600 text-sm mt-2">
+          Conception d’un portfolio moderne et responsive en HTML et Tailwind CSS,
+          déployé sur GitHub Pages.
+        </p>
+      </div>
 
-    <div class="bg-white p-4 shadow rounded">
-      <h3 class="font-bold">Application Java</h3>
-      <p>Système de gestion bancaire et application de gestion automobile.</p>
+      <div class="bg-gray-50 rounded-xl p-5 hover:-translate-y-1 hover:shadow-lg transition">
+        <h3 class="font-semibold text-lg">Applications Java</h3>
+        <p class="text-gray-600 text-sm mt-2">
+          Développement d’un système de gestion bancaire et d’une application de gestion
+          automobile en Java.
+        </p>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- ================= CONTACT ================= -->
-<section id="contact" class="bg-white p-6 mt-6">
-  <h2 class="text-2xl font-bold mb-4">Contact</h2>
-  <p>Email : diaany1975@Gmail.com</p>
-  <p>GitHub : https://github.com/diany</p>
-  <p>LinkedIn : https://linkedin.com</p>
+<section id="contact" class="max-w-6xl mx-auto p-6 mt-6">
+  <div class="bg-white rounded-xl shadow-sm hover:shadow-md transition p-6">
+    <h2 class="text-2xl font-bold mb-4 text-blue-600">Contact</h2>
+    <p class="text-gray-700">📧 Email : <strong>diaany1975@gmail.com</strong></p>
+    <p class="text-gray-700">💻 GitHub : <strong>github.com/diaany1975-crypto</strong></p>
+    <p class="text-gray-700">🔗 LinkedIn : <strong>linkedin.com</strong></p>
+  </div>
 </section>
 
 <!-- ================= FOOTER ================= -->
-<footer class="bg-gray-800 text-white text-center p-4 mt-10">
-  © 2026 Diany. Tous droits réservés.
+<footer class="bg-gray-900 text-gray-400 text-center py-5 mt-20 text-sm">
+  © 2026 · Diany — Portfolio personnel
 </footer>
 
 </body>
